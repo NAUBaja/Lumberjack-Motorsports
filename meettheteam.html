@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="height=device-height initial-scale=1.0">	
+
+<meta name="viewport" content="width=device-width initial-scale=1.0">	
+
+<meta charset="UTF-8">	
+	
+<style>
+
+
+.img-circle {
+    	border-radius: 50%;
+	margin-left: 90px;
+	padding: 10px;
+	width:  200px;
+    	height: 200px;
+    	background-size: cover;
+	float: left;
+}
+
+.img-circle2 {
+    	border-radius: 50%;
+	padding: 10px;
+}
+
+.img-circle3 {
+	padding: 10px;
+	width:  100px;
+   	height: 100px;
+    	object-fit: cover;
+	
+}
+
+.img-circle4 {
+	padding: 10px;
+	width:  100px;
+   	height: 100px;
+    	object-fit: cover;
+}
+
+body {
+    	background-image: url("Backg.jpg");
+	background-color: #cccccc;
+	background-size: cover;
+	background-position: center;
+    	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+
+a.class1:link {
+    	color: white;
+    	background-color: transparent;
+    	text-decoration: none;
+}
+
+a.class1:visited {
+    	color: white;
+    	background-color: transparent;
+    	text-decoration: none;
+}
+
+a.class1:hover {
+    	color: #f1b300;
+    	background-color: transparent;
+    	text-decoration: none;
+}
+
+a.class1:active {
+    	color: black;
+    	background-color: transparent;
+    	text-decoration: none;
+}
+
+a.class2:link {
+    	color: white;
+    	background-color: transparent;
+    	text-decoration: none;
+}
+
+a.class2:visited {
+    	color: white;
+    	background-color: transparent;
+    	text-decoration: none;
+}
+
+a.class2:hover {
+    	color: #f1b300;
+    	background-color: transparent;
+    	text-decoration: none;
+}
+
+a.class2:active {
+    	color: black;
+    	background-color: transparent;
+    	text-decoration: none;
+}
+
+a.class3:link {
+    	color: white;
+    	background-color: transparent;
+    	text-decoration: none;
+}
+
+a.class3:visited {
+    	color: white;
+    	background-color: transparent;
+    	text-decoration: none;
+}
+
+a.class3:hover {
+    	color: black;
+    	background-color: transparent;
+    	text-decoration: none;
+}
+
+a.class3:active {
+    	color: white;
+    	background-color: transparent;
+    	text-decoration: none;
+}
+
+div.container {
+	margin: auto;
+	text-align: center;
+	padding: 0px 0px 10px 0px;
+	height: 1600px;
+}
+
+h1 {
+	color: black;
+	margin: 0;
+	text-align: center;
+	font-family: Georgia, serif;
+}
+
+h2 {
+	color: black;
+	float: left
+	font-family: Georgia, serif;
+}	
+
+img {
+	float: middle;
+    	display: block;
+    	margin: auto;
+}
+
+.menu {
+	width: 10%;
+	float: right;
+	clear: right;	
+	padding: 0px 0px;
+	border: 3px solid white;
+	background-color: white;
+}
+
+footer {
+	color: white;
+}
+
+header {
+	margin: auto;
+	text-align: center;
+	background-color: #003466;
+	color: black;
+	font-family: Georgia, serif;
+	font-size: 275%;
+	padding: 2px;
+	border-radius: 10px;
+	border: 2px solid #f1b300;
+	width: 1440px;
+}
+
+nav {
+	background: rgba(0, 51, 102, 0.85);
+	border-radius: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+    	width: 1024px;
+	margin: 32px 0px 0px 430px;
+	font-family: Georgia, serif;
+	font-size: 32px;
+	border: 2px solid #f1b300;
+	
+}
+
+p1 { 
+	font-size: 8;
+	font-style: italic;
+	font-family: Georgia, serif;
+}
+
+.main {
+	background: rgba(0, 51, 102, 0.85);
+	border-radius: 10px;
+	height: 1440px;
+	width: 1024px;	
+	margin: auto;
+	
+}
+
+.image {
+	overflow: hidden;
+	transition: .5s ease;
+  	backface-visibility: hidden;
+}
+
+.faces {
+	display: inline-block;
+	margin: 35px;
+	overflow: hidden;
+	
+}
+
+.middle {
+  	transition: .5s ease;
+ 	opacity: 1;
+  	position: absolute;
+  	transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%);
+  	text-align: center;
+}
+
+.maintitle {
+	width: 100%;
+	text-align: center;
+}
+
+.maintxt {
+	height: 425px;
+	width: 500px;
+	float: right;
+	padding-right: 0px;
+	margin-right: 20px;
+	padding-top: 20px;
+	font-family: Georgia, serif;
+	text-align: left;
+	line-height: 1.4;
+		
+}
+
+.picset {
+	background: rgba(255, 255, 255, 0.85);
+	margin: auto;
+	padding-top: 10px;
+	width: 1024px;
+	border-radius: 10px;
+}
+
+.picset4 {
+	margin: auto;
+	padding-top: 95px;
+	width: 1024px;
+}
+
+
+.picset2 {
+	display: inline-block;
+    	background-size: cover;
+	margin: auto;
+		
+}
+
+.text {
+ 	background-color: #003d80;
+	text-align: center;
+	position: absolute;
+  	color: white;
+	width: 200px;
+	height: 50px;
+  	font-size: 20px;
+	padding 16px 32px;
+	font-family: Georgia, serif;
+}
+
+
+</style>
+</head>
+<body>
+
+<header>
+
+<a href="cb0i.github.io" class="class1">  2020 - 2021 Lumberjack Motorsports Baja </a> 
+
+</header>
+
+<div class="container">
+	
+<img class="img-circle" src="LMLogo.jpg" alt="LMLogo" >
+
+<h></h>
+
+<p></p>
+
+<p></p>
+
+<nav>
+
+	<p1><a href="Baja.html" class="class2">   Home   </a></p1>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<p1><a href="utscontact.htm" class="class2">  Meet The Team    </a></p1>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<p1><a href="utscontact.htm" class="class2">   Photo Gallery    </a></p1>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<p1><a href="utscontact.htm" class="class2">   Sponsors    </a></p1>
+</nav>
+<br>
+<br>
+<div class=main>
+
+<div class=faces>
+	<img src=face.png width=200px height=200px class=image>
+	
+	
+	<div class= middle> 
+	<div class=text>Name and position here.</div>
+	
+	</div>
+	</div>	
+<div class=faces>
+	<img src=face.png width=200px height=200px class=image>
+	
+	
+	<div class= middle> 
+	<div class=text>Name and position here.</div>
+	
+	</div>
+	</div>	
+<div class=faces>
+	<img src=face.png width=200px height=200px class=image>
+	
+	
+	<div class= middle> 
+	<div class=text>Name and position here.</div>
+	
+	</div>
+	</div>	
+<div class=faces>
+	<img src=face.png width=200px height=200px class=image>
+	
+	
+	<div class= middle> 
+	<div class=text>Name and position here.</div>
+	
+	</div>
+	</div>	
+<div class=faces>
+	<img src=face.png width=200px height=200px class=image>
+	
+	
+	<div class= middle> 
+	<div class=text>Name and position here.</div>
+	
+	</div>
+	</div>	
+<div class=faces>
+	<img src=face.png width=200px height=200px class=image>
+	
+	
+	<div class= middle> 
+	<div class=text>Name and position here.</div>
+	
+	</div>
+	</div>	
+<div class=faces>
+	<img src=face.png width=200px height=200px class=image>
+	
+	
+	<div class= middle> 
+	<div class=text>Name and position here.</div>
+	
+	</div>
+	</div>	
+<div class=faces>
+	<img src=face.png width=200px height=200px class=image>
+	
+	
+	<div class= middle> 
+	<div class=text>Name and position here.</div>
+	
+	</div>
+	</div>		
+
+<div class=faces>
+	<img src=face.png width=200px height=200px class=image>
+	
+	
+	<div class= middle> 
+	<div class=text>Name and position here.</div>
+	
+	</div>
+	</div>	
+<div class=faces>
+	<img src=face.png width=200px height=200px class=image>
+	
+	
+	<div class= middle> 
+	<div class=text>Name and position here.</div>
+	
+	</div>
+	</div>	
+<div class=faces>
+	<img src=face.png width=200px height=200px class=image>
+	
+	
+	<div class= middle> 
+	<div class=text>Name and position here.</div>
+	
+	</div>
+	</div>		
+
+<div class=faces>
+	<img src=face.png width=200px height=200px class=image>
+	
+	
+	<div class= middle> 
+	<div class=text>Name and position here.</div>
+	
+	</div>
+	</div>	
+<div class=faces>
+	<img src=face.png width=200px height=200px class=image>
+	
+	
+	<div class= middle> 
+	<div class=text>Name and position here.</div>
+	
+	</div>
+	</div>	
+<div class=faces>
+	<img src=face.png width=200px height=200px class=image>
+	
+	
+	<div class= middle> 
+	<div class=text>Name and position here.</div>
+	
+	</div>
+	</div>		
+
+<div class=faces>
+	<img src=face.png width=200px height=200px class=image>
+	
+	
+	<div class= middle> 
+	<div class=text>Name and position here.</div>
+	
+	</div>
+	</div>	
+</div>
+
+<p></p>
+
+
+</div class="container">
+
+<footer>Built by Connor Hoffmann &nbsp; &nbsp; October 1, 2020</footer>
+
+</body>
+</html>
